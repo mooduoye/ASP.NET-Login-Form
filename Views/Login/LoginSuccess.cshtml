@@ -1,0 +1,35 @@
+﻿@model ASP.NET_Login_Form.Models.UserModel
+
+@{
+    ViewBag.Title = "LoginSuccess";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h3>Login success</h3>
+<h2>Bravo !!!</h2>
+
+<div>
+    <h4>UserModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    
+    @Html.ActionLink("Back to Home", "Index")
+</p>
